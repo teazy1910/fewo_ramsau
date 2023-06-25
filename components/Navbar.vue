@@ -27,7 +27,9 @@
       <div class="hidden md:block">
         <ul class="flex space-x-8 text-sm font-sans">
           <li>
-            <a href="#" class="active border-b-2 border-blue-500 pb-1">Home</a>
+            <a href="#" class="active border-b-2 border-emerald-900 pb-1"
+              >Home</a
+            >
           </li>
           <li><a href="#" class="">Ferienwohnung</a></li>
           <li><a href="#" class="">Preise</a></li>
@@ -35,8 +37,8 @@
           <li><a href="#" class="">Kontakt</a></li>
           <li>
             <a
-              href="#"
-              class="cta bg-blue-500 hover:bg-blue-600 px-3 py-2 rounded text-white font-semibold"
+              href="../Buchen"
+              class="cta bg-emerald-900 hover:bg-emerald-900 px-3 py-2 rounded text-white font-semibold"
               >Buchen</a
             >
           </li>
@@ -124,9 +126,9 @@
           </li>
           <li>
             <a
-              href="#"
+              to="/Buchen"
               @click="isOpen = false"
-              class="my-8 w-full text-center font-semibold cta inline-block bg-blue-500 hover:bg-blue-600 px-3 py-2 rounded text-white"
+              class="my-8 w-full text-center font-semibold cta inline-block bg-emerald-800 hover:bg-emerald-800 px-3 py-2 rounded text-white"
               >Buchen</a
             >
           </li>
@@ -161,7 +163,7 @@ export default {
   },
   mounted() {
     document.addEventListener("keydown", (e) => {
-      if (e.key == 27 && this.isOpen) this.isOpen = false;
+      if (e.keyCode === 27 && this.isOpen) this.isOpen = false;
     });
   },
 };

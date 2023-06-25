@@ -13,7 +13,7 @@
       >
         <img
           :src="picture.src"
-          class="block w-1/2 mx-auto pb-10"
+          class="block w-3/4 mx-auto pb-64"
           :alt="picture.alt"
         />
       </div>
@@ -105,20 +105,20 @@ const props = defineProps({
           alt: "Badezimmer",
         },
         {
+          src: "/Dusche.jpeg",
+          alt: "Dusche",
+        },
+        {
           src: "/Esszimmer.jpeg",
-          alt: "Picture 2",
+          alt: "Esszimmer",
         },
         {
           src: "/Bett.jpeg",
-          alt: "Picture 3",
+          alt: "Bett",
         },
         {
           src: "/Wohn+Esszimmer.jpeg",
-          alt: "Picture 3",
-        },
-        {
-          src: "/Dusche.jpeg",
-          alt: "Picture 3",
+          alt: "Wohn & Esszimmer",
         },
       ];
     },
@@ -130,10 +130,10 @@ const props = defineProps({
     default: true,
   },
   slide: {
-    default: false,
+    default: true,
   },
   slideInterval: {
-    default: 3000,
+    default: 2000,
   },
   animation: {
     default: false,
