@@ -2,7 +2,7 @@
   <div id="default-carousel" class="relative">
     <!-- Carousel wrapper -->
     <div
-      class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96"
+      class="overflow-hidden relative h-96 max-h-full rounded-lg sm:h-64 xl:h-80 2xl:h-96"
     >
       <!-- Item 1 -->
       <div
