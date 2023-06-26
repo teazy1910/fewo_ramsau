@@ -4,6 +4,7 @@
     <Hero />
     <About />
     <Carousel />
+    <Preise />
   </div>
 </template>
 <script setup></script>

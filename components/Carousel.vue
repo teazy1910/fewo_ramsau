@@ -2,7 +2,7 @@
   <div id="default-carousel" class="relative">
     <!-- Carousel wrapper -->
     <div
-      class="overflow-hidden relative h-96 max-h-full rounded-lg sm:h-64 xl:h-80 2xl:h-96"
+      class="relative overflow-hidden rounded-2xl h-[134px] md:h-[320px] lg:h-[435px]-"
     >
       <!-- Item 1 -->
       <div
@@ -13,16 +13,16 @@
       >
         <img
           :src="picture.src"
-          class="block w-3/4 mx-auto pb-64"
+          class="block w-3/4 mx-auto"
           :alt="picture.alt"
         />
       </div>
-      <!-- top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2-->
+      <!--  -translate-x-1/2 -translate-y-1/2-->
     </div>
     <!-- Slider indicators -->
     <div
       v-if="indicators"
-      class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2"
+      class="flex absolute bottom-5 -translate-y-1/2 left-1/2 z-30 space-x-3 -translate-x-1/2"
     >
       <button
         v-for="(picture, index) in pictures"
