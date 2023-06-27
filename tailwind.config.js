@@ -7,13 +7,18 @@ module.exports = {
     "./nuxt.config.{js,ts}",
   ],
   theme: {
-    fontFamily: {
-      roboto: ["Roboto"],
-      Cormorant: ["Cormorant"],
-      Lato: ["Lato"],
+    extend: {
+      fontFamily: {
+        Lato: ["Lato"],
+        Vibes: ["Great Vibes"],
+        Amiri: ["Amiri"],
+      },
     },
     theme: {
       screens: {
+        xs: "320px",
+        x: "375px",
+        s: "425px",
         sm: "480px",
         md: "768px",
         lg: "1024px",

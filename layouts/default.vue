@@ -3,15 +3,15 @@
     <Navbar />
     <Hero />
     <About />
-    <Carousel />
     <Preise />
+    <Slider />
   </div>
 </template>
 <script setup></script>
 <style>
 html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Great Vibes", "Amiri" -apple-system, BlinkMacSystemFont,
+    "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

@@ -1,15 +1,17 @@
 <template>
-  <h1 class="font-Cormorant mt-8 text-center text-lgs font-bold md:text-5xl">
+  <h1 class="font-Vibes mt-8 text-center text-lg font-bold md:text-6xl">
     Herzlich Willkommen <br />
     <span> im Haus am Kurpark</span>
   </h1>
-  <h2 class="text-center font-Lato text-sm my-8">Urlaub im Bergsteigerdorf</h2>
-  <div class="mb-12 flex md:flex-row flex-col">
+  <h2 class="text-center font-Amiri text-sm my-8 md:text-2xl">
+    Urlaub im Bergsteigerdorf
+  </h2>
+  <div class="mb-12 flex md:flex-row flex-col flex-1">
     <NuxtImg
       src="Sigrid.png"
       class="rounded-lg px-12 md:ml-24 lg:w-1/4 md:w-[400px] sm:p-12 m-auto md:flex-row w-[380px]"
     />
-    <p class="pr-12 md:text-xl">
+    <p class="p-12 md:text-xl">
       Unsere Ferienwohnung befindet sich im Herzen von Ramsau, dem 1.
       Bergsteigerdorf Deutschlands inmitten des einzigen Alpen Nationalparks in
       Deutschland. Unser Haus ist idyllisch gelegen, eingebettet in eine
