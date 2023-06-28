@@ -25,7 +25,7 @@
 
       <!-- Navbar -->
       <div class="hidden md:block">
-        <ul class="flex space-x-8 text-sm font-sans">
+        <ul class="flex space-x-8 text-m font-Amiri">
           <li>
             <a href="#" class="active border-b-2 border-emerald-900 pb-1"
               >Home</a
