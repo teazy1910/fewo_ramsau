@@ -1,11 +1,21 @@
 <template>
-  <div>
-    <Navbar />
+<div>
+    <Navbar class="z-50"/>
     <Hero />
     <About />
     <Preise />
     <Slider />
-  </div>
+</div>
 </template>
+
+
 <script setup></script>
-<style></style>
+<style>
+
+html
+{
+  box-sizing: border-box;
+  padding: 0; 
+  margin: 0; 
+}
+</style>

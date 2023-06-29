@@ -1,11 +1,11 @@
 <template>
   <h1
-    class="font-Vibes mt-8 md:my-12 text-center text-lg font-bold md:text-7xl"
+    class="mt-8 md:my-12 text-center text-lg md:text-6xl"
   >
     Herzlich Willkommen <br />
-    <span class="font-Amiri text-3xl font-light"> im Haus am Kurpark</span>
+    <span class="font-['Amiri'] text-3xl font-bold"> im Haus am Kurpark</span>
   </h1>
-  <h2 class="text-center font-Amiri text-sm md:text-2xl">
+  <h2 class="text-center text-sm md:text-2xl">
     Urlaub im Bergsteigerdorf
   </h2>
 
@@ -27,4 +27,4 @@
   </div>
 </template>
 
-<!-- mobile first - kleiner screen als erstes (default) -->
+<!-- mobile first - (default) -->

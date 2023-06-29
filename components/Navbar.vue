@@ -1,5 +1,5 @@
 <template>
-  <nav class="w-full p-4 bg-white">
+  <nav class="w-full p-12 bg-white sticky top-0">
     <div class="flex items-center justify-between">
       <!-- Header logo -->
       <div>
@@ -25,7 +25,7 @@
 
       <!-- Navbar -->
       <div class="hidden md:block">
-        <ul class="flex space-x-8 text-m font-Amiri">
+        <ul class="flex space-x-8 text-lg">
           <li>
             <a href="#" class="active border-b-2 border-emerald-900 pb-1"
               >Home</a
@@ -38,7 +38,7 @@
           <li>
             <a
               href="../Buchen"
-              class="cta bg-emerald-900 hover:bg-emerald-900 px-3 py-2 rounded text-white font-semibold"
+              class="cta bg-emerald-900 hover:bg-emerald-900 px-5 py-3 rounded text-white"
               >Buchen</a
             >
           </li>
@@ -128,7 +128,7 @@
             <a
               to="/Buchen"
               @click="isOpen = false"
-              class="my-8 w-full text-center font-semibold cta inline-block bg-emerald-800 hover:bg-emerald-800 px-3 py-2 rounded text-white"
+              class="my-8 w-full text-center inline-block bg-emerald-800 hover:bg-emerald-800 px-3 py-2 rounded text-white"
               >Buchen</a
             >
           </li>

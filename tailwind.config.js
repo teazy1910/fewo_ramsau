@@ -1,3 +1,5 @@
+import defaultTheme from 'tailwindcss/defaultTheme'
+
 module.exports = {
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -10,21 +12,22 @@ module.exports = {
     extend: {
       fontFamily: {
         Lato: ["Lato"],
-        Vibes: ["Great Vibes"],
-        Amiri: ["Amiri"],
+        Vibes: ['Great Vibes', cursive],
+        Amiri: ['Amiri', serif],
+        Daughter: ['Architects Daughter']
       },
-    },
-    theme: {
-      screens: {
-        xs: "320px",
-        x: "375px",
-        s: "425px",
-        sm: "480px",
-        md: "768px",
-        lg: "1024px",
-        xl: "1440px",
+      
+      theme: {
+        screens: {
+          xs: "320px",
+          x: "375px",
+          s: "425px",
+          sm: "480px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1440px",
+        }
       },
     },
   },
-  plugins: [require("flowbite/plugin")],
 };
