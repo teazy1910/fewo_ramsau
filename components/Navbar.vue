@@ -1,11 +1,11 @@
 <template>
-  <nav class="w-full p-12 bg-white sticky top-0">
+  <nav class="w-full py-8 text-black sticky top-0 bg-white">
     <div class="flex items-center justify-between">
       <!-- Header logo -->
       <div>
         <Logo />
       </div>
-
+  
       <!-- Mobile toggle -->
       <div class="md:hidden">
         <button @click="drawer">
@@ -25,10 +25,10 @@
 
       <!-- Navbar -->
       <div class="hidden md:block">
-        <ul class="flex space-x-8 text-lg">
+        <ul class="flex justify-center px-48 space-x-12 text-lg">
           <li>
-            <a href="#" class="active border-b-2 border-emerald-900 pb-1"
-              >Home</a
+            <a href="#" class="active border-b-2 border-emerald-900 pb-2"
+            >Home</a
             >
           </li>
           <li><a href="#" class="">Ferienwohnung</a></li>
@@ -36,9 +36,8 @@
           <li><a href="#" class="">Bilder</a></li>
           <li><a href="#" class="">Kontakt</a></li>
           <li>
-            <a
-              href="../Buchen"
-              class="cta bg-emerald-900 hover:bg-emerald-900 px-5 py-3 rounded text-white"
+            <a href="#"
+              class="my-8 w-full text-center bg-emerald-800 hover:bg-emerald-800 px-3 py-2 rounded text-white"
               >Buchen</a
             >
           </li>
@@ -136,6 +135,12 @@
       </aside>
     </div>
   </nav>
+  <div class="flex justify-end">
+    <img
+        src="/Hausansicht.png" class="h-full w-3/4  rounded-xl"/>
+          <h1 class="text-3xl text-start text-white">Natur. <br/> Erholung. <br/>  Entspannung</h1>
+        </div>
+
 </template>
 
 <script>
@@ -143,7 +148,7 @@ export default {
   data() {
     return {
       isOpen: false,
-    };
+    };s
   },
   methods: {
     drawer() {

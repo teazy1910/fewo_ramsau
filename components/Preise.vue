@@ -70,20 +70,20 @@
 
   .card-image {
     width: 400px;
-    height: 250px;
+    height: 300px;
   }
   .card-image > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: bottom;
+    object-position: center;
   }
   .card-text {
-    margin: -30px -90px;
+    margin: -150px auto;
     font-family: "Amiri";
-    margin-bottom: -50px;
+    /* margin-bottom: -50px; */
     /* height: 300px; */
-    width: 400px;
+    width: 350px;
     background-color: #fff;
     color: rgb(71,14,14);
     padding: 3.6em;

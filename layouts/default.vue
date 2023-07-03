@@ -1,7 +1,7 @@
 <template>
 <div>
     <Navbar class="z-50"/>
-    <Hero />
+    <!-- <Hero /> -->
     <About />
     <Preise />
     <Slider />

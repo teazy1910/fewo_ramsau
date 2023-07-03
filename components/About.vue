@@ -1,9 +1,9 @@
 <template>
   <h1
-    class="mt-8 md:my-12 text-center text-lg md:text-6xl"
+    class="font-Architects my-12 text-center text-lg md:text-6xl"
   >
     Herzlich Willkommen <br />
-    <span class="font-['Amiri'] text-3xl font-bold"> im Haus am Kurpark</span>
+    <span class="font-Daughter text-3xl font-bold">im Haus am Kurpark</span>
   </h1>
   <h2 class="text-center text-sm md:text-2xl">
     Urlaub im Bergsteigerdorf

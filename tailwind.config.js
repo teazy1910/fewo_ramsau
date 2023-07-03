@@ -12,8 +12,8 @@ module.exports = {
     extend: {
       fontFamily: {
         Lato: ["Lato"],
-        Vibes: ['Great Vibes', cursive],
-        Amiri: ['Amiri', serif],
+        Vibes: ['Great Vibes'],
+        Amiri: ['Amiri'],
         Daughter: ['Architects Daughter']
       },
       

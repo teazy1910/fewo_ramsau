@@ -133,7 +133,7 @@ const props = defineProps({
     default: true,
   },
   slideInterval: {
-    default: 2000,
+    default: 4000,
   },
   animation: {
     default: false,

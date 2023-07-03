@@ -1,3 +1,3 @@
 <template>
-<nuxt-img src="/Logo.png" sizes=""/>
+<nuxt-img src="/Logo.png"/>
 </template>
