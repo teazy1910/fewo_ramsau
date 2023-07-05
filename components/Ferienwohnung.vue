@@ -1,12 +1,9 @@
 <template>
-  <div class="carousel">
-    <h1>Für die Vorfreude</h1>
-    <h2>Ein kleiner Vorgeschmack auf Ihren Urlaub in Ramsau</h2>
+  <div class="carousel mb-24">
+    <h1 class="md:text-4xl md:m-12 font-Lato">Bildergalerie der Ferienwohnung</h1>
     <transition name="fade">
-      <img :src="selectedImage" alt="Selected Image" />
+      <img :src="selectedImage" alt="Selected Image" class="w-1/2" />
     </transition>
-    <div class="carousel-text">
-    </div>
     <div class="indicator-bar">
       <span
         v-for="(image, index) in images"
@@ -22,13 +19,10 @@
 import { ref, computed, onMounted, onUnmounted } from "vue";
 
 const images = ref([
-  "../Badezimmer.jpeg",
-  "../Bett.jpeg",
-  "../Esszimmer.jpeg",
-  "../hausansicht.JPG",
-  "../Balkon_Aussicht.jpg",
-  "../Haus-Drohne.jpg",
-  "../Küche.jpg",
+  "/Esszimmer.jpeg",
+  "/Bad.jpeg",
+  "/Küche.jpg",
+  "/Wohn+Esszimmer.jpeg"
 ]);
 
 
@@ -65,17 +59,10 @@ onUnmounted(() => {
 });
 </script>
 
-<style scoped>
-h1 {
-  font-size: 2rem;
-  margin-bottom: 1.2em;
-  font-weight: bold;
-}
 
-h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1.2em;
-}
+
+<style scoped>
+
 
 .carousel {
   display: flex;
@@ -83,9 +70,6 @@ h2 {
   align-items: center;
   justify-content: center;
   position: relative;
-  margin-left: 5em;
-  margin-right: 5em;
-  margin-top: 5em;
 }
 
 .carousel-text span {
@@ -96,24 +80,20 @@ h2 {
 .indicator-bar {
   display: flex;
   justify-content: center;
-  margin: 10px;
+  margin: 0.5em;
 }
 
 .indicator-bar span {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
+  background-color: lightgray;
   border-radius: 50%;
-  background-color: gray;
   margin: 0 5px;
   cursor: pointer;
 }
 
 .indicator-bar span.active {
-  background-color: black;
-}
-
-img {
-  width: 900px;
+  background-color: #50614b;
 }
 
 .carousel-text {
@@ -131,4 +111,5 @@ img {
 .fade-leave-to {
   opacity: 0;
 }
+
 </style>
