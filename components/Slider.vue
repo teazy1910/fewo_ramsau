@@ -4,9 +4,7 @@
     <h2>Ein kleiner Vorgeschmack auf Ihren Urlaub in Ramsau</h2>
     <transition name="fade">
       <img :src="selectedImage" alt="Selected Image" />
-    </transition>
-    <div class="carousel-text">
-    </div>
+   </transition>
     <div class="indicator-bar">
       <span
         v-for="(image, index) in images"
@@ -88,20 +86,16 @@ h2 {
   margin-top: 5em;
 }
 
-.carousel-text span {
-  font-size: 2.5rem;
-  margin-bottom: 1em;
-}
 
 .indicator-bar {
   display: flex;
   justify-content: center;
-  margin: 10px;
+  margin: 5px;
 }
 
 .indicator-bar span {
-  width: 15px;
-  height: 15px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background-color: gray;
   margin: 0 5px;
@@ -109,17 +103,13 @@ h2 {
 }
 
 .indicator-bar span.active {
-  background-color: black;
+  background-color: #3c4937;
 }
 
+@media screen and (max-width: 768px) {
 img {
   width: 900px;
 }
-
-.carousel-text {
-  margin-top: 10px;
-  font-size: 16px;
-  text-align: center;
 }
 
 .fade-enter-active,

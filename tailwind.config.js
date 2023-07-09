@@ -1,6 +1,9 @@
 import defaultTheme from 'tailwindcss/defaultTheme'
 
 module.exports = {
+  css: [
+    "~/assets/scss/input.css"
+  ],
   content: [
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
@@ -16,18 +19,18 @@ module.exports = {
         Amiri: ['Amiri'],
         Daughter: ['Architects Daughter']
       },
-      
-      theme: {
-        screens: {
-          xs: "320px",
-          x: "375px",
-          s: "425px",
-          sm: "480px",
-          md: "768px",
-          lg: "1024px",
-          xl: "1440px",
-        }
-      },
     },
   },
+  theme: {
+    screens: {
+      'md': '768px',
+      // => @media (min-width: 640px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+    },
+  }
 };

@@ -1,10 +1,10 @@
 <template>
-  <div class="carousel mb-24">
+  <div id="ferienwohnung" class="carousel mb-24">
     <h1 class="md:text-4xl md:m-12 font-Lato">Bildergalerie der Ferienwohnung</h1>
     <transition name="fade">
       <img :src="selectedImage" alt="Selected Image" class="w-1/2" />
     </transition>
-    <div class="indicator-bar">
+    <div class="indicator-bar ">
       <span
         v-for="(image, index) in images"
         :key="index"
@@ -39,7 +39,7 @@ function selectImage(index) {
 function startAutoCarousel() {
   autoInterval.value = setInterval(() => {
     nextImage();
-  }, 3000);
+  }, 4000);
 }
 
 function stopAutoCarousel() {
@@ -82,15 +82,15 @@ onUnmounted(() => {
   justify-content: center;
   margin: 0.5em;
 }
-
+ 
 .indicator-bar span {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   background-color: lightgray;
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
-}
+} 
 
 .indicator-bar span.active {
   background-color: #50614b;

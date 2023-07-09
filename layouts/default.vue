@@ -1,11 +1,11 @@
 <template>
-  <nav class="w-full font-Lato py-8 md:px-8 text-black sticky top-0 bg-white z-50">
-    <div class="flex items-center justify-between">
+  <nav
+    class="w-full font-Lato py-2 px-3 md:pl-2 text-black sticky top-0 bg-white z-50">
+    <div class="flex justify-between items-center align-center">
       <!-- Header Logo -->
       <div>
-        <Logo/>
+        <Logo />
       </div>
-  
       <!-- Mobile toggle -->
       <div class="md:hidden">
         <button @click="drawer">
@@ -16,30 +16,53 @@
             stroke-linejoin="round"
             stroke-width="2"
             viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
+            stroke="currentColor">
             <path d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
       </div>
-
       <!-- Navbar -->
       <div class="hidden md:block">
-        <ul class="flex justify-center space-x-8 md:text-xl">
-          <li><NuxtLink class="" to="/">Home</NuxtLink></li>
-          <li><NuxtLink to="/">Ferienwohnung</NuxtLink></li>
-          <li><NuxtLink to="/preise">Preisliste</NuxtLink></li>
-          <li><NuxtLink to="/anfahrt" class="">Anfahrt</NuxtLink></li>
-          <li><NuxtLink to="./components/Kontakt" class="">Kontakt</NuxtLink></li>
+        <ul
+          class="flex md:text-sm justify-center md:text-[12px] md:space-x-5 space-x-20">
           <li>
-            <NuxtLink to="/"
-              class="my-12 w-full text-center bg-[#3c4937] md:px-6 md:py-3 rounded text-white md:mr-12"
-              >Buchen</NuxtLink
-            >
+            <nuxt-link :to="{hash: '#home'}" :external="true">
+              <!-- no need for a path if same page -->
+              Home
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link :to="{hash: '#about'}" :external="true">
+              <!-- no need for a path if same page -->
+              Über uns
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link :to="{hash: '#preise'}" :external="true">
+              <!-- no need for a path if same page -->
+              Preise
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link :to="{hash: '#ferienwohnung'}" :external="true">
+              <!-- no need for a path if same page -->
+              Ferienwohnung
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link :to="{hash: '#kontakt'}" :external="true">
+              <!-- no need for a path if same page -->
+              Anfahrt
+            </nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to='https://tbooking.toubiz.de/DEU00000060013432410/tbooking/?globalReset=1&lang=de' class="bg-[#d28002] text-white py-2 px-6">
+              <!-- no need for a path if same page -->
+              Buchen
+            </nuxt-link>
           </li>
         </ul>
       </div>
-
       <!-- Dark Background Transition -->
       <transition
         enter-class="opacity-0"
@@ -47,31 +70,26 @@
         enter-to-class="opacity-100"
         leave-class="opacity-100"
         leave-active-class="ease-out transition-medium"
-        leave-to-class="opacity-0"
-      >
+        leave-to-class="opacity-0">
         <div
           @keydown.esc="isOpen = false"
           v-show="isOpen"
-          class="z-10 fixed inset-0 transition-opacity"
-        >
+          class="z-10 fixed inset-0 transition-opacity">
           <div
             @click="isOpen = false"
             class="absolute inset-0 bg-black opacity-50"
-            tabindex="0"
-          ></div>
+            tabindex="0"></div>
         </div>
       </transition>
 
       <!-- Drawer Menu -->
       <aside
         class="p-5 transform top-0 left-0 w-64 bg-white fixed h-full overflow-auto ease-in-out transition-all duration-300 z-30"
-        :class="isOpen ? 'translate-x-0' : '-translate-x-full'"
-      >
+        :class="isOpen ? 'translate-x-0' : '-translate-x-full'">
         <div class="close">
           <button
             class="absolute top-0 right-0 mt-4 mr-4"
-            @click="isOpen = false"
-          >
+            @click="isOpen = false">
             <svg
               class="w-6 h-6"
               fill="none"
@@ -79,8 +97,7 @@
               stroke-linejoin="round"
               stroke-width="2"
               viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
+              stroke="currentColor">
               <path d="M6 18L18 6M6 6l12 12"></path>
             </svg>
           </button>
@@ -88,12 +105,11 @@
 
         <span
           @click="isOpen = false"
-          class="flex w-full items-center p-4 border-b"
-        >
+          class="flex w-full items-center p-4 border-b">
           <Logo />
         </span>
 
-        <ul class="divide-y font-sans">
+        <ul class="divide-y font-Lato">
           <li>
             <a href="#" @click="isOpen = false" class="my-4 inline-block"
               >Home</a
@@ -131,14 +147,10 @@
       </aside>
     </div>
   </nav>
-
-
   <div>
-    <slot/>
+    <NuxtPage />
   </div>
 </template>
-
-
 
 <script>
 export default {
@@ -171,5 +183,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

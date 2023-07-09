@@ -1,5 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
+
 export default defineNuxtConfig({
+  css: [
+    '~/assets/css/fonts/.ttf'
+  ],
   modules: [
     "@nuxtjs/tailwindcss", 
     "@nuxt/image", 
@@ -7,20 +12,24 @@ export default defineNuxtConfig({
   ],
   googleFonts: {
     families: {
-      Amiri: [400,700],
-      Lato: [100, 300],
+      'Amiri': true,
+      'Lato': true,
       'Architects+Daughter': true,
       'Great+Vibes': true,
     }
   },
-  link: [
-    {
-      rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Architects+Daughter&family=Great+Vibes&family=Lato:wght@100;400&display=swap'
+  app : {
+    head: {
+      title: "Ferienwohnung Zörner",
+      meta: [
+        { name: "description", content: "Urlaub in Ramsau bei Berchtesgaden"}
+      ],
+      link: [
+        {
+          rel: 'stylesheet',
+          href:"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" 
+        },
+      ],
     }
-  ],
-  router: {
-    linkActiveClass: "active",
-    linkExactActiveClass: "exact-active",
-  },
-});
+  }
+})
