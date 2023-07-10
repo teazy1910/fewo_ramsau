@@ -1,21 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
-
-export default defineNuxtConfig({
-  css: [
-    '~/assets/css/fonts/.ttf'
-  ],
+export default({
   modules: [
     "@nuxtjs/tailwindcss", 
     "@nuxt/image", 
     "@nuxtjs/google-fonts"
   ],
+
   googleFonts: {
     families: {
       'Amiri': true,
+      'Great+Vibes': true, 
+      'Architects+Daughter': true, 
       'Lato': true,
-      'Architects+Daughter': true,
-      'Great+Vibes': true,
     }
   },
   app : {
@@ -24,7 +21,7 @@ export default defineNuxtConfig({
       meta: [
         { name: "description", content: "Urlaub in Ramsau bei Berchtesgaden"}
       ],
-      link: [
+      link: [ 
         {
           rel: 'stylesheet',
           href:"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" 

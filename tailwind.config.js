@@ -1,8 +1,6 @@
-import defaultTheme from 'tailwindcss/defaultTheme'
-
 module.exports = {
   css: [
-    "~/assets/scss/input.css"
+    "~/assets/css/input.css"
   ],
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -15,9 +13,9 @@ module.exports = {
     extend: {
       fontFamily: {
         Lato: ["Lato"],
-        Vibes: ['Great Vibes'],
+        Vibes: ['Great+Vibes'],
         Amiri: ['Amiri'],
-        Daughter: ['Architects Daughter']
+        Daughter: ['Architects+Daughter']
       },
     },
   },

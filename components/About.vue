@@ -1,9 +1,9 @@
 <template>
 <div id="about">
 <div class="xl:m-68 w-full flex md:flex-row justify-center flex-col items-center">
-    <NuxtImg
+    <NuxtImg :size="100"
     src="Sigrid.png"
-    class="w-2/5 mt-12 md:mt-0 md:pl-12 lg:w-1/4"
+    class="mt-12 md:mt-0 md:pl-12 lg:w-1/4"
     /> 
   <p class="text-sm self-center md:text-lg px-24 py-12">
     Unsere Ferienwohnung befindet sich im Herzen von Ramsau, dem 1.
@@ -12,11 +12,12 @@
     malerische Landschaft und zu jeder Jahreszeit eine Reise wert.<br /><br />
     Wir freuen uns auf Sie.<br/>
    <br/><span
-    class="md:text-4xl text-lg"
+    class="font-Vibes md:text-4xl text-lg"
     >Ihre Familie Zörner</span
     >
       </p>
     </div> 
+ 
   </div>
 </template>
 
