@@ -63,7 +63,6 @@ onUnmounted(() => {
 
 <style scoped>
 
-
 .carousel {
   display: flex;
   flex-direction: column;

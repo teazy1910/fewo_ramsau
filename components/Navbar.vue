@@ -1,3 +1,22 @@
+<script setup>
+import { ref, onMounted } from 'vue';
+
+const isOpen = ref(false);
+
+const drawer = () => {
+  isOpen.value = !isOpen.value;
+};
+
+onMounted(()=> {
+  document.addEventListener('keydown', (e) => {
+    if (e.keyCode === 27 && isOpen.value) isOpen.value = false;
+  });
+});
+
+</script>
+
+
+
 <template>
   <nav
     class="w-full font-Lato py-2 px-3 md:pl-2 text-black sticky top-0 bg-white z-50">
@@ -57,7 +76,7 @@
           </li>
           <li>
             <nuxt-link to='https://tbooking.toubiz.de/DEU00000060013432410/tbooking/?globalReset=1&lang=de' class="bg-[#d28002] text-white py-2 px-6">
-              <!-- no need for a path if same page -->
+              <!-- no need for a path if  same page -->
               Buchen
             </nuxt-link>
           </li>
@@ -148,47 +167,4 @@
     </div>
   </nav>
 </template>
-
-<script>
-export default {
-  head: {
-    title: "Nuxt.js with TailwindUI",
-    meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {
-        hid: "description",
-        name: "description",
-        content: "Nuxt.js with TailwindUI example",
-      },
-    ],
-  },
-  data() {
-    return {
-      isOpen: false,
-    };
-  },
-  methods: {
-    drawer() {
-      this.isOpen = !this.isOpen;
-    },
-  },
-  watch: {
-    isOpen: {
-      immediate: true,
-      handler(isOpen) {
-        if (process.client) {
-          if (isOpen) document.body.style.setProperty("overflow", "hidden");
-          else document.body.style.removeProperty("overflow");
-        }
-      },
-    },
-  },
-  mounted() {
-    document.addEventListener("keydown", (e) => {
-      if (e.keyCode === 27 && this.isOpen) this.isOpen = false;
-    });
-  },
-};
-</script>
 

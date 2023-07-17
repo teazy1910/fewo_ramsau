@@ -1,12 +1,8 @@
 <template>
-<div class="min-h-screen font-sans antialiased relative">
-    <div class="relative">
-      <div
-        class="absolute top-0 left-0 w-full h-[125vh] sm:h-[225vh] lg:h-[125vh] cover-gradient-2 sm:cover-gradient"
-      ></div>
+<div class="min-h-screen antialiased relative">
+    <div>
       <Navbar />
-
-      <main class="text-neutral-800">
+      <main>
         <NuxtPage />
       </main>
     </div>
@@ -15,3 +11,17 @@
 <script>
 
 </script>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+  font-family: 'Lato';
+}
+
+</style>

@@ -61,19 +61,17 @@
       </p>
       <div class="bg-[#50614b] flex flex-col justify-center align-middle md:pt-24 text-white w-screen">
         <span class="material-symbols-outlined pt-5 self-center">calendar_month</span>
-        <h1 class="font-Lato md:text-5xl self-center mb-4">Hauptsaison</h1>
+        <h1 class="font-Lato md:text-5xl text-xl font-bold self-center mb-4">Hauptsaison</h1>
         <p class="md:text-xl self-center">1. Januar bis 30. Mai</p>
         <p class="md:text-xl self-center">15. Oktober bis 30. Dezember</p>
-        <h1 class="font-Lato md:text-5xl self-center mt-10 mb-4" >Nebensaison</h1>
+        <h1 class="md:text-5xl text-xl font-bold self-center mt-10 mb-4" >Nebensaison</h1>
         <p class="md:text-xl self-center">1. Juni bis 14. Oktober</p>
         <p class="md:text-xl self-center pb-10 md:pb-24">31. Dezember bis 1. Januar</p>
       </div>
     </div>
 </template>
 
-<style>
-
-
+<style scoped>
 .material-symbols-outlined {
 font-size: 80px;
 opacity: 40%;

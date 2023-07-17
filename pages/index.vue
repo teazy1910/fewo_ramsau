@@ -1,25 +1,14 @@
+<style>
+  @import "/assets/css/main.css";
+</style>
+
 <template>
- <div class="w-full">
-    <!-- Hero section -->
-    <section id="hero" class="rounded-lg">
-      <Hero/>
-    </section>
-
-    <!-- About us Section -->
-    <section id="about">
-      <About/>  
-    </section>
-
-    <Preise/>
-    <Bildergalerie/>
-    <Anfahrt/>
-
-
-
-  </div>
-
-
-
-
+  <Hero />
+  <About />
+  <Preise />
+  <Bildergalerie />
+  <Service />
+  <Anfahrt />
 </template>
 
+<script></script>

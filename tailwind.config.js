@@ -1,7 +1,5 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  css: [
-    "~/assets/css/input.css"
-  ],
   content: [
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
@@ -9,26 +7,22 @@ module.exports = {
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}",
   ],
-  theme: {
-    extend: {
-      fontFamily: {
-        Lato: ["Lato"],
-        Vibes: ['Great+Vibes'],
-        Amiri: ['Amiri'],
-        Daughter: ['Architects+Daughter']
-      },
+    fontFamily: {
+      handwritten: ['Architects Daughter'],
+      Lato: ['Lato'],
+      Amiri: ['Amiri']
     },
+  screens: {
+    sm: "450px",
+    // => @media (min-width: 450px) { ... }
+
+    md: "768px",
+    // => @media (min-width: 640px) { ... }
+
+    lg: "1024px",
+    // => @media (min-width: 1024px) { ... }
+
+    xl: "1280px",
+    // => @media (min-width: 1280px) { ... }
   },
-  theme: {
-    screens: {
-      'md': '768px',
-      // => @media (min-width: 640px) { ... }
-
-      'lg': '1024px',
-      // => @media (min-width: 1024px) { ... }
-
-      'xl': '1280px',
-      // => @media (min-width: 1280px) { ... }
-    },
-  }
 };

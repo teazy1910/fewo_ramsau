@@ -23,13 +23,12 @@
                 </h2>
                 <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">
                     Hier haben Sie die Möglichkeit uns eine Nachricht zukommen zu lassen.
-                    Wir freuen uns
-                </p>
+                    Wir freuen uns   </p>
                 <form action="#" class="space-y-8">
                     <div>
                         <label for="email" class="block mb-2 text-sm font-medium text-grey-400">eMail Adresse</label>
                         <input type="email" id="email"
-                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-400 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                            class="shadow-sm bg-gray-50 border border-gray-300 text-gray-400 text-sm rounded-lg focus:ring-primary-500 focus:border-emerald-500 block w-full p-2.5"
                             placeholder="name@email.de" required />
                     </div>
                     <div>
@@ -43,11 +42,11 @@
                         <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Ihre
                             Nachricht an uns</label>
                         <textarea id="message" rows="6"
-                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
+                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-none focus:ring-primary-500 h-min-[10rem]"
                             placeholder="Ihre Nachricht an uns..."></textarea>
                     </div>
                     <button type="submit"
-                        class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300">
+                        class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-emerald-700 sm:w-fit hover:bg-emerald-800 focus:ring-4 focus:outline-none focus:ring-emerald-300">
                         Nachricht absenden
                     </button>
                 </form>
