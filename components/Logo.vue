@@ -1,11 +1,10 @@
 <template>
-       <nuxt-img class="logo" src="/Logo.png"/>
+       <nuxt-img class="logo" src="/logo.png"/>
 </template>
 
 <style scoped>
-@media screen and (max-width: 768px) {
-    .logo {
-        width:180px;
+ .logo {
+        width: 300px;
     }
-}
+
 </style>

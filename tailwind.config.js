@@ -7,11 +7,29 @@ module.exports = {
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}",
   ],
-    fontFamily: {
-      handwritten: ['Architects Daughter'],
-      Lato: ['Lato'],
-      Amiri: ['Amiri']
+  theme: {
+    extend: {
+      fontFamily: {
+        Daughter: ["Architects Daughter"],
+        Lato: ["Lato"],
+        Amiri: ["Amiri"],
+        Vibes: ["Great Vibes"],
+        Roboto: ["Roboto"],
+        Playfair: ["Playfair Display"],
+      },
     },
+    borderRadius: {
+      none: "0",
+      sm: "0.125rem",
+      md: "0.375rem",
+      lg: "0.5rem",
+      full: "9999px",
+      large: "12px",
+    },
+    content: {
+      link: 'url("/Elipse.png")',
+    },
+  },
   screens: {
     sm: "450px",
     // => @media (min-width: 450px) { ... }

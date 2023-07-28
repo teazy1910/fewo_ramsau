@@ -1,27 +1,34 @@
 <template>
-<div class="min-h-screen antialiased relative">
+  <div class="antialiased">
     <div>
-      <Navbar />
-      <main>
-        <NuxtPage />
-      </main>
+        <Navbar/>
+        <PageHero/>
+        <PageAbout/>
+        <Preise/>
+        <Service/>
+        <Bildergalerie/>
+        <Anfahrt/>
+       <Footer/>
     </div>
   </div>
 </template>
-<script>
 
-</script>
+<script setup></script>
 
 <style>
-
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
-  font-family: 'Lato';
-}
-
+  min-height: 100vh;
+  font-size: 1rem;
+  
+  }
 </style>
+
+<!-- bg-[#D6DBD4]
+ bg-[#253C39]
+-->
