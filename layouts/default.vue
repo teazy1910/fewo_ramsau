@@ -1,16 +1,10 @@
 <template>
-  <div class="antialiased">
-    <div>
-        <Navbar/>
-        <PageHero/>
-        <PageAbout/>
-        <Preise/>
-        <Service/>
-        <Bildergalerie/>
-        <Anfahrt/>
-       <Footer/>
-    </div>
-  </div>
+  <GlobalNavbar/>
+  <GlobalHero/>
+  <AppAbout/>
+  <FewoPreise/>
+  <FewoService/>
+  <AppMaps/>
 </template>
 
 <script setup></script>
@@ -23,10 +17,9 @@
 }
 
 html {
-  min-height: 100vh;
+  height: 100vh;
   font-size: 1rem;
-  
-  }
+}
 </style>
 
 <!-- bg-[#D6DBD4]
