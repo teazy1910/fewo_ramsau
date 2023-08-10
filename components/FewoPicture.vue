@@ -44,7 +44,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div id="ferienwohnung" class="carousel mb-24 font-Playfair mt-12">
+  <div id="ferienwohnung" class="carousel mb-24 font-Playfair md:mt-36">
     <h1 class="md:text-4xl md:mb-12 text-3xl mb-3">Bilder der Ferienwohnung</h1>
     <h3 class="md:text-2xl md:mb-5 text-xl mb-5">Machen Sie sich einen ersten Eindruck</h3>
     <transition name="fade">

@@ -1,7 +1,7 @@
 <template>
   <div
     id="impressum"
-    class="flex flex-col justify-center items-center bg-[#4E5F4B] text-[#C5CBC3] p-10">
+    class="font-Roboto flex flex-col justify-center items-center bg-[#4E5F4B] text-[#C5CBC3] p-10">
     <h2 class="md:text-4xl font-Playfair my-9">Impressum</h2>
     <div class="flex">
       <div class="mx-12">

@@ -58,7 +58,7 @@
           </tr>
         </tbody>
       </table>
-      <div class="flex flex-col md:p-7 bg-[#4e5f4b] font-Roboto m-auto text-white p-12">
+      <div class="flex flex-col md:p-7 bg-[#4e5f4b] font-Roboto m-auto text-white p-10">
           <h1 class="md:text-2xl text-xl self-center">Nebensaison</h1>
           <p class="md:text-lg self-center font-light">1. Januar bis 30. Mai</p>
           <p class="md:text-ls self-center font-light pb-3">15. Oktober bis 30. Dezember
@@ -68,7 +68,7 @@
           <p class="md:text-lg self-center font-light">31. Dezember bis 1. Januar</p>
        </div>
   </div>
-</div>
+  </div>
 </template>
 
 
