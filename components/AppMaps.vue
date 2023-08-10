@@ -41,10 +41,10 @@ async function submit(form) {
 
 <template>
   <div id="anfahrt" class="py-12 w-full">
-    <h1 class="font-Roboto text-3xl md:text-5xl text-center md:mb-10 mb-5">
+    <h1 class="font-Playfair text-3xl md:text-5xl text-center md:mb-10 mb-5">
       Anfahrt & Kontakt
     </h1>
-    <h3 class="font-Roboto text-lg md:text-2xl text-center mb-8">
+    <h3 class="font-Playfair text-lg md:text-2xl text-center mb-8">
       So kommen Sie zu uns:
     </h3>
     <div

@@ -16,7 +16,7 @@ onMounted(() => {
 
 <template>
   <nav class="w-full fixed text-[#d6dbd4] bg-[#4F604B] top-0 z-50 mb-24 grow-0">
-    <div class="flex justify-center items-center md:my-4 my-2">
+    <div class="flex md:justify-center justify-left items-center md:my-4 py-2 px-6">
       <!-- Mobile toggle -->
       <div class="md:hidden">
         <button @click="drawer">
@@ -57,7 +57,7 @@ onMounted(() => {
             <p class="font-Playfair text-3xl">Ferienwohnung Zörner</p>
           </div>
           <li>
-            <nuxt-link :to="{hash: '#kontakt'}" :external="true">
+            <nuxt-link :to="{hash: '#anfahrt'}" :external="true">
               <!-- no need for a path if same page -->
               Anfahrt
             </nuxt-link>
@@ -68,7 +68,7 @@ onMounted(() => {
             </nuxt-link>
           </li>
           <li>
-            <nuxt-link to="/impressum">
+            <nuxt-link to="#impressum">
               Impressum
             </nuxt-link>
           </li>

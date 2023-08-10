@@ -9,7 +9,7 @@
         </p>
     </div>
     <div class="flex justify-center align-baseline">
-        <div class="bg-[#3C4937] text-center font-Lato pt-36 text-white w-1/2 h-[550px] mt-36">
+        <div class="bg-[#4E5F4B] text-center font-Lato pt-36 text-white w-1/2 h-[550px] mt-36">
             <h1 class="md:text-3xl text-2xl pb-12">So kontaktieren Sie uns:</h1>
             <h3 class="md:text-4xl text-xl pb-4">Tel.: +49 (0) 8657 983666</h3>
             <h3 class="md:text-4xl text-xl pb-4">Mobil: +49 (0) 160 2821721</h3>

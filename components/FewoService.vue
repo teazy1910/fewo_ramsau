@@ -1,7 +1,7 @@
 <template>
-  <div id="service" class="font-Roboto md:px-64 m-auto grid">
-    <h1 class="md:text-4xl font-Playfair text-3xl text-center md:py-4">Unser Service</h1>
-      <p class="text-xl text-center font-Playfair">für Ihren Aufenthalt</p>
+  <div id="service" class="font-Roboto md:p-36 m-auto grid">
+    <h1 class="md:text-5xl font-Playfair text-3xl text-center md:py-8">Unser Service</h1>
+      <p class="text-2xl md:py-5 text-center font-Playfair">für Ihren Aufenthalt</p>
     <div
       class="text-[#d9d9d9] grid grid-content-center grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-2">
       <div class="my-1 bg-[#4E5F4B] p-8">

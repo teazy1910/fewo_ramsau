@@ -1,10 +1,12 @@
 <template>
-  <GlobalNavbar/>
-  <GlobalHero/>
-  <AppAbout/>
-  <FewoPreise/>
-  <FewoService/>
-  <AppMaps/>
+    <GlobalNavbar/>
+    <GlobalHero/>
+    <AppAbout/>
+    <FewoPreise/>
+    <FewoPicture/>
+   <FewoService/>
+   <AppMaps/>
+   <GlobalFooter/>
 </template>
 
 <script setup></script>

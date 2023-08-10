@@ -1,20 +1,3 @@
-<template>
-  <div id="ferienwohnung" class="carousel mb-24">
-    <h1 class="md:text-4xl md:mb-12 mt-12 text-3xl font-Playfair">Bildergalerie der Ferienwohnung</h1>
-    <h3 class="md:text-2xl md:mb-5 text-xl mb-12 font-Playfair">Machen Sie sich einen ersten Eindruck</h3>
-    <transition name="fade">
-      <img :src="selectedImage" alt="Selected Image" class="md:w-1/2 w-[70%]" />
-    </transition>
-    <div class="indicator-bar ">
-      <span
-        v-for="(image,index) in images"
-        :key="index"
-        :class="{ active: index === selectedIndex }"
-        @click="selectImage(index)"
-      ></span>
-    </div>
-  </div>
-</template>
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from "vue";
@@ -60,6 +43,23 @@ onUnmounted(() => {
 });
 </script>
 
+<template>
+  <div id="ferienwohnung" class="carousel mb-24 font-Playfair mt-12">
+    <h1 class="md:text-4xl md:mb-12 text-3xl mb-3">Bilder der Ferienwohnung</h1>
+    <h3 class="md:text-2xl md:mb-5 text-xl mb-5">Machen Sie sich einen ersten Eindruck</h3>
+    <transition name="fade">
+      <img :src="selectedImage" alt="Selected Image" class="md:w-1/2 w-[70%]" />
+    </transition>
+    <div class="indicator-bar ">
+      <span
+        v-for="(image,index) in images"
+        :key="index"
+        :class="{ active: index === selectedIndex }"
+        @click="selectImage(index)"
+      ></span>
+    </div>
+  </div>
+</template>
 
 
 <style scoped>
